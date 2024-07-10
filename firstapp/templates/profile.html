@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div style="width: 50rem; margin: auto">
+    <h1>Profile Page of {{ user.username }}</h1>
+    <a class="btn btn-warning rounded-pill" href="{% url 'change_pass' %}">Change Password</a>
+    <a class="btn btn-info rounded-pill" href="{% url 'edit_profile' %}">Edit Profile</a>
+    <a class="btn btn-danger rounded-pill" href="{% url 'forget_password' %}">Reset Password</a>
+  </div>
+{% endblock %}
